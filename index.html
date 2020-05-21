@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <div id = "main">
+            <div id = "modal">
+                <div id = "modal_content">
+                    <form name = "nameForm">
+                        <h2 style = "padding-top: 20px;">Player Names:</h2>
+                        <label for = "player1">Player 1</label>
+                        <input type = "text" id = "player1" name = "player1" value = "Player 1" required> <br> <br>
+                        <label for = "player2">Player 2</label>
+                        <input type = "text" id = "player2" name = "player2" value = "Player 2" required> <br> <br>
+                        <button type = "submit">Submit</button>
+                        <button type = "button" id = "cancel">Cancel</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id = "modal2">
+                <div id = "modal_content2" style = "padding-bottom: 0px;">
+                    <form name = "nameForm2">
+                        <h2 style = "padding-top: 20px;">Player Name:</h2>
+                        <label for = "player1">Player 1</label>
+                        <input type = "text" id = "player0" name = "player1" value = "Player 1" required> <br> <br>
+                        <button type = "submit">Submit</button>
+                        <button type = "button" id = "cancel2">Cancel</button>
+                    </form>
+                </div>
+            </div>
+
+            <h1>Tic-Tac-Toe</h1>
+            <div id = "options">
+                <button id = "multiplayer" type = "button" class = "big_button">Player vs Player</button>
+                <button id = "singleplayer" type = "button" class = "big_button">Player vs AI</button>
+                <button class = "big_button" id = "reset" type = "button">New Game</button>
+            </div>
+
+            <div id = "scoreboard">
+                <h3 id = "turn"></h3>
+                <h3 id = "playerScore1"></h3>
+                <h3 id = "playerScore2"></h3>
+            </div>
+
+            <div id = "board">
+                <script src = "addSquares.js"></script>
+            </div>
+
+        </div>
+    </body>
+
+    <script src = "game.js"></script>
+</html>
